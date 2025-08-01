@@ -8,7 +8,7 @@ function Navbar() {
           <li><a href="/" className="text-gray-900 text-base hover:underline">Acceuil</a></li>
           <li><a href="/about" className="text-gray-900 text-base hover:underline">À propos</a></li>
           <li><a href="/contact" className="text-gray-900 text-base hover:underline hover:text-emerald-900">Nos actions</a></li>
-          <li><a href="/contact" className="text-emerald-900 text-base hover:text-lg">Contact</a></li>
+          <li><a href="/contact" className="text-emerald-900 text-base hover:text-gray-900">Contact</a></li>
         </ul>
       </div>
     </nav>
