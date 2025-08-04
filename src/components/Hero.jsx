@@ -1,8 +1,8 @@
 function Hero() {
     return (
         <>
-            <section className="relative bg-[url('src/assets/images/hero.png')] bg-cover bg-center h-[70vh] text-white">
-                <div className="absolute inset-0 bg-black/50"></div> {/* Ajoute le voile si nécessaire */}
+            <section className="relative bg-[url('src/assets/images/hero.jpeg')] bg-cover bg-center h-[70vh] text-white">
+                <div className="absolute inset-0 bg-black/50"></div>
                 <div className="relative z-20 p-20">
                     <div className="max-w-xl">
                         <h1 className="text-4xl font-bold mb-4">Agir pour les plus fragiles</h1>
