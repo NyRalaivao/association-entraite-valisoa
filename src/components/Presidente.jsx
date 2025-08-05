@@ -3,7 +3,7 @@ function Presidente() {
     <section className="bg-stone-50 py-16 px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 max-w-5xl">
         {/* Image de la fondatrice */}
-        <div className="w-150 h-100 rounded-full overflow-hidden border-4 border-emerald-600 shadow-lg">
+        <div className="w-[40vw] max-w-[150px] h-[25vw] rounded-full overflow-hidden border-4 border-emerald-600 shadow-lg">
           <img
             src="src/assets/images/Fondatrice.png"
             alt="RAKOTOMAHARO Miangola Valisoa"

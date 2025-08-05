@@ -6,8 +6,10 @@ import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Presentation from './components/Presentation.jsx'
 import Realisations from './components/Realisations.jsx'
+import Carousel from './components/Carousel.jsx'
 import Presidente from './components/Presidente.jsx'
 import EquipeComponent from './components/Equipe';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Hero/>
       <Presentation/>
       <Realisations/>
+      <Carousel/>
       <Presidente/>
       <EquipeComponent/>
     </>

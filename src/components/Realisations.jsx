@@ -1,119 +1,67 @@
-const Realisations = () => {
-  const data = [
-    {
-      id: 1,
-      images: ["photo1.jpeg "],
-      title: "Notre premier geste : un début qui fait chaud au cœur",
-      description:
-        "En juillet 2024, notre aventure a réellement commencé. Nous avons eu l’immense joie d’aider et de redonner le sourire à plus d’un millier de personnes... Merci à tous ceux qui croient en notre mission. Chaque geste compte."
-    },
-    {
-      id: 2,
-      images: ["photo2.jpeg", "photo3.png"],
-      title: "Solidarité avec nos aînés",
-      description:
-        "Nous n'avons pas oublié nos aînés... chaque geste de solidarité, venait du cœur."
-    },
-    {
-      id: 3,
-      images: ["photo4.png", "photo5.png", "photo6.png", "photo7.png"],
-      title: "Soutien scolaire aux enfants de l'EPP",
-      description:
-        "Parce que chaque enfant mérite d'apprendre dans de bonnes conditions... Un simple cahier, un stylo… parfois, ce sont ces petites choses qui ouvrent les portes de l'avenir."
-    },
-    {
-      id: 4,
-      images: ["photo8.jpeg", "photo9.jpeg"],
-      title: "Parrainage scolaire",
-      description:
-        "Des enfants parrainés par notre association, accompagnés avec amour et espoir dans leur parcours scolaire..."
-    },
-    {
-      id: 5,
-      images: ["photo10.jpeg", "photo11.jpeg", "photo12.jpeg", "photo13.jpeg", "photo14.jpeg"],
-      title: "Visite au Centre Sœur Éducation Orchidée",
-      description:
-        "SOUTIEN ET SOLIDARITÉ AUX PERSONNES EN SITUATION DE HANDICAP... Chaque action compte et peut apporter un peu de lumière dans leur vie."
-    },
-    {
-      id: 6,
-      images: ["photo15.jpg", "photo16.jpg", "photo17.jpg"],
-      title: "Journée de la femme - 8 mars",
-      description:
-        "Hommage à ces femmes courageuses d'Ambatomaro... Leur résilience inspire le respect."
-    },
-    {
-      id: 7,
-      images: ["photo18.jpeg", "photo19.jpeg"],
-      title: "Formation en développement personnel",
-      description:
-        "Une journée de formation avec les collaborateurs de Transport RAR... placer l’humain au cœur de l’entreprise."
-    },
-    {
-      id: 8,
-      images: ["photo20.jpg", "photo21.jpg", "photo22.jpg", "photo23.jpg"],
-      title: "Soutien scolaire et goûter dans une école catholique",
-      description:
-        "Offrir fournitures scolaires et partager un moment chaleureux avec les élèves et enseignants."
-    },
-    {
-      id: 9,
-      images: ["photo24.jpg", "photo25.jpg"],
-      title: "Reboisement à Belou sur Tsiribina",
-      description:
-        "Un engagement durable pour les générations futures... un symbole d’espoir pour Belou."
-    },
-    {
-      id: 10,
-      images: ["photo26.jpg", "photo27.jpg", "photo28.jpg", "photo29.jpg"],
-      title: "Mission dans le Sud-Ouest pour les femmes rurales",
-      description:
-        "Partager un peu de joie pendant les festivités de l’indépendance... Autonomiser une femme rurale, c’est lui donner les moyens de prendre sa vie en main."
-    },
-    {
-      id: 11,
-      images: ["photo30.jpeg"],
-      title: "Moments mensuels avec les enfants",
-      description:
-        "À travers la distribution de friandises, de goûters, de petits cadeaux... illuminer les cœurs."
-    }
-  ];
+import React from 'react';
 
+function Realisations() {
   return (
-    <section className="bg-gray-100 py-16 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-emerald-600">
-          Nos Réalisations
-        </h2>
-        <div className="grid gap-12">
-          {data.map((item) => (
-            <div key={item.id} className="bg-white rounded-xl shadow p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="grid grid-cols-2 gap-2">
-                  {item.images.map((img, index) => (
-                    <img
-                      key={index}
-                      src={`src/assets/images/${img}`}
-                      alt={item.title}
-                      className="rounded-lg object-cover w-full h-40"
-                    />
-                  ))}
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-emerald-700 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-700 text-sm whitespace-pre-wrap">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
+    <section className="bg-white py-16 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative">
+        {/* Bloc gauche avec les photos */}
+        <div className="w-full md:w-1/2 relative flex flex-wrap justify-center items-center gap-2">
+          {/* Ces divs représentent les photos avec différentes tailles */}
+          <img
+            src="src/assets/images/photo18.jpeg"
+            alt="Réalisation 1"
+            className="w-16 h-16 object-cover rounded-md"
+          />
+          <img
+            src="src/assets/images/photo3.png"
+            alt="Réalisation 2"
+            className="w-24 h-12 object-cover rounded-md"
+          />
+          <img
+            src="src/assets/images/photo24.jpeg"
+            alt="Réalisation 3"
+            className="w-20 h-20 object-cover rounded-md"
+          />
+          <img
+            src="src/assets/images/photo30.jpeg"
+            alt="Réalisation 4"
+            className="w-28 h-28 object-cover rounded-md"
+          />
+          <img
+            src="src/assets/images/photo29.jpeg"
+            alt="Réalisation 5"
+            className="w-40 h-28 object-cover rounded-md"
+          />
+          <img
+            src="src/assets/images/photo7.png"
+            alt="Réalisation 6"
+            className="w-36 h-36 object-cover rounded-md"
+          />
+          <img
+            src="src/assets/images/photo2.jpeg"
+            alt="Réalisation 7"
+            className="w-48 h-40 object-cover rounded-md"
+          />
+        </div>
+
+        {/* Bloc droit avec le texte */}
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-bold text-emerald-700 mb-4">Nos réalisations</h2>
+          <p className="text-gray-600 mb-6">
+            The standard Lorem Ipsum passage is: Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+
+          <button className="border border-emerald-600 px-6 py-2 rounded hover:bg-emerald-600 hover:text-white transition">
+            Voir plus
+          </button>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Realisations;
