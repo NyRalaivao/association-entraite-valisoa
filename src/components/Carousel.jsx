@@ -32,7 +32,7 @@ const images = [
 export default function Carousel() {
   return (
     <>
-      {/* Animation CSS directement intégrée */}
+      {/* Animation CSS */}
       <style>
         {`
           @keyframes scroll {
@@ -50,7 +50,8 @@ export default function Carousel() {
         `}
       </style>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-10 px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-10 px-4 bg-white">
+        {/* Carousel d'images */}
         <div className="carousel-container relative w-full max-w-6xl overflow-hidden rounded shadow-md">
           <div className="scrolling-wrapper flex w-max">
             {[...images, ...images].map((src, index) => (
@@ -64,15 +65,35 @@ export default function Carousel() {
           </div>
         </div>
 
+        {/* Texte de présentation */}
         <div className="max-w-md text-gray-700 mt-6 md:mt-0">
-          <h2 className="text-2xl font-bold text-emerald-700 mb-4">Nos Réalisations</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-            Nulla quis sem at nibh elementum imperdiet.
+          <h2 className="text-2xl font-bold text-emerald-700 mb-4">
+            Soutien à l’éducation et développement personnel
+          </h2>
+
+          <p className="mb-4">
+            L’association place <span className="font-semibold text-emerald-600">l’éducation</span> au cœur de sa mission :
+          </p>
+
+          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+            <li>
+              Fournitures scolaires offertes aux enfants de l’<span className="text-amber-600">EPP</span> et des écoles catholiques.
+            </li>
+            <li>
+              Récompenses symboliques pour les élèves ayant passé le <span className="font-medium text-emerald-600">CEPE</span>.
+            </li>
+            <li>
+              <span className="font-medium text-emerald-600">Parrainage actif</span> de 20 enfants pour leur permettre de poursuivre leur scolarité dans de bonnes conditions.
+            </li>
+          </ul>
+          
+          <p className="mb-6">
+            Chaque mois, de petits moments de <span className="text-amber-600 font-medium">partage</span> sont organisés pour les enfants de <span className="text-emerald-600 font-semibold">Nanitoana Mahasoabe</span> :
+            <span className="italic"> goûters, friandises, petits cadeaux</span> – des gestes simples mais porteurs d'<span className="font-semibold text-emerald-700">espoir</span>.
           </p>
         </div>
       </div>
     </>
   );
 }
+

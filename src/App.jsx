@@ -8,7 +8,8 @@ import Presentation from './components/Presentation.jsx'
 import Realisations from './components/Realisations.jsx'
 import Carousel from './components/Carousel.jsx'
 import Presidente from './components/Presidente.jsx'
-import EquipeComponent from './components/Equipe';
+import EquipeComponent from './components/Equipe.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Carousel/>
       <Presidente/>
       <EquipeComponent/>
+      <Footer/>
     </>
   )
 }
