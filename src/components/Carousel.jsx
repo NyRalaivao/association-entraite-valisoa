@@ -1,5 +1,3 @@
-import React from "react";
-
 const images = [
   "src/assets/images/photo1.jpeg",
   "src/assets/images/photo2.jpeg",

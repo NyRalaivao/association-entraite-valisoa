@@ -9,7 +9,7 @@ function Footer() {
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-2">Contact</h3>
-          <p>Téléphone : <a href="tel:+261381622069" className="hover:underline">+261 38 16 220 69</a></p>
+          <p>Téléphone : <a href="tel:+261381622069" className="hover:underline">+261 34 15 342 19</a></p>
           <p>Email : <a href="mailto:mutualaidfoundation2025@gmail.com" className="hover:underline">mutualaidfoundation2025@gmail.com</a></p>
         </div>
         <div>
